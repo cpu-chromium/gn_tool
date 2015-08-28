@@ -1,4 +1,6 @@
-#! /bin/bash
+#!/bin/bash
+trap 'exit' ERR
+
 if [ ! -f gsutil/gsutil ]
   then
     rm gsutil.tar.gz
